@@ -20,9 +20,9 @@ describe('Day 1', () => {
     });
   });
 
-  // describe('Part 2', () => {
-  //   test('example input', () => {
-  //     expect(part2(exampleInput)).toBe();
-  //   });
-  // });
+  describe('Part 2', () => {
+    test('example input', () => {
+      expect(part2(exampleInput)).toBe(6);
+    });
+  });
 });
