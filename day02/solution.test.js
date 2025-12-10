@@ -7,7 +7,7 @@ const exampleInput = `
 describe('Day 2', () => {
   describe('Part 1', () => {
     test('example input', () => {
-      expect(part1(exampleInput)).toBe(0);
+      expect(part1(exampleInput)).toBe(1227775554);
     });
   });
 
