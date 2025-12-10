@@ -1,10 +1,10 @@
 // template, not actual solution
 
 function rotateLeft(current, distance) {
-  return (current-distance) % 100;
+  return ((current-distance) % 100 + 100) % 100;
 }
 
-function rotateRight(start) {
+function rotateRight(current, distance) {
   return (current+distance) % 100;
 }
 
