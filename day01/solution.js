@@ -1,24 +1,23 @@
 // template, not actual solution
 
+function rotateLeft(current, distance) {
+  return (current-distance) % 100;
+}
+
+function rotateRight(start) {
+  return (current+distance) % 100;
+}
+
 export function part1(input) {
   const lines = input.trim().split('\n');
-  
-  // Example: Sum all numbers in the input
-  const sum = lines.reduce((total, line) => {
-    return total + parseInt(line, 10);
-  }, 0);
-  
+  let start = 50;
+  for(let line of lines) {
+    let direction = line[0];
+    let number = 
+  }
   return sum;
 }
 
-export function part2(input) {
-  const lines = input.trim().split('\n');
-  
-  // Example: Sum only even numbers
-  const sum = lines.reduce((total, line) => {
-    const num = parseInt(line, 10);
-    return num % 2 === 0 ? total + num : total;
-  }, 0);
-  
-  return sum;
-}
+// export function part2(input) {
+//   const lines = input.trim().split('\n');
+// }
