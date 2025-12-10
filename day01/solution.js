@@ -1,3 +1,5 @@
+// template, not actual solution
+
 export function part1(input) {
   const lines = input.trim().split('\n');
   
