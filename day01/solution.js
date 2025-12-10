@@ -9,19 +9,31 @@ function rotateRight(current, distance) {
 }
 
 export function part1(input) {
+  // Parse input
   const lines = input.trim().split('\n');
-  let start = 50;
+  
+  // Set starting values
+  let dial = 50;
   let zeroes = 0;
+
+  // Loop through input, get direction and units to turn
   for(let line of lines) {
-    let direction = line[0];
-    let number = parseInt(line.slice(1), 10);
+    let direction = line[0]; // 'L' or 'R'
+    let turns = parseInt(line.slice(1), 10);  // Decimal number of turns
+    
+    // Rotate dial accordingly
+
     if (direction === 'L') {
-      start = rotateLeft(start, number);
+      dial = rotateLeft(dial, turns);
     } else if (direction === 'R') {
-      start = rotateRight(start, number);
+      dial = rotateRight(dial, turns);
     }
-    if (start === 0) zeroes++;
+
+    // Log zeroes
+
+    if (dial === 0) zeroes++;
   }
+
   return zeroes;
 }
 
